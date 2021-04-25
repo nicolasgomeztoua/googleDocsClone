@@ -23,7 +23,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const s = io("http://localhost:5000/");
+    const s = io("https://googledocsclone.herokuapp.com/");
     setSocket(s);
 
     return () => {
